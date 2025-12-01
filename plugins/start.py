@@ -9,7 +9,7 @@ from helper_func import subscribed, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
 
 tombotz = FILE_AUTO_DELETE
-tomdeveloper = tom botz
+tomdeveloper = tombotz
 file_auto_delete = humanize.naturaldelta(tomdeveloper)
 
 
