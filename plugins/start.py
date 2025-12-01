@@ -8,7 +8,7 @@ from config import ADMINS, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL
 from helper_func import subscribed, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
 
-tom botz = FILE_AUTO_DELETE
+tombotz = FILE_AUTO_DELETE
 tomdeveloper = tom botz
 file_auto_delete = humanize.naturaldelta(tomdeveloper)
 
