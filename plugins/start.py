@@ -8,9 +8,9 @@ from config import ADMINS, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL
 from helper_func import subscribed, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
 
-madflixofficials = FILE_AUTO_DELETE
-jishudeveloper = madflixofficials
-file_auto_delete = humanize.naturaldelta(jishudeveloper)
+tom botz = FILE_AUTO_DELETE
+tomdeveloper = tom botz
+file_auto_delete = humanize.naturaldelta(tomdeveloper)
 
 
 
@@ -61,7 +61,7 @@ async def start_command(client: Client, message: Message):
             return
         await temp_msg.delete()
     
-        madflix_msgs = [] # List to keep track of sent messages
+        tombotz_msgs = [] # List to keep track of sent messages
 
         for msg in messages:
 
@@ -76,14 +76,14 @@ async def start_command(client: Client, message: Message):
                 reply_markup = None
 
             try:
-                madflix_msg = await msg.copy(chat_id=message.from_user.id, caption = caption, parse_mode = ParseMode.HTML, reply_markup = reply_markup, protect_content=PROTECT_CONTENT)
+                tombotz_msg = await msg.copy(chat_id=message.from_user.id, caption = caption, parse_mode = ParseMode.HTML, reply_markup = reply_markup, protect_content=PROTECT_CONTENT)
                 # await asyncio.sleep(0.5)
-                madflix_msgs.append(madflix_msg)
+                tombotz_msgs.append(tombotz_msg)
                 
             except FloodWait as e:
                 await asyncio.sleep(e.x)
-                madflix_msg = await msg.copy(chat_id=message.from_user.id, caption = caption, parse_mode = ParseMode.HTML, reply_markup = reply_markup, protect_content=PROTECT_CONTENT)
-                madflix_msgs.append(madflix_msg)
+                tombotz_msg = await msg.copy(chat_id=message.from_user.id, caption = caption, parse_mode = ParseMode.HTML, reply_markup = reply_markup, protect_content=PROTECT_CONTENT)
+                tombotz_msgs.append(tombotz_msg)
                 
             except:
                 pass
@@ -92,7 +92,7 @@ async def start_command(client: Client, message: Message):
         k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>IMPORTANT</u> ❗️</b>\n\nThis Video / File Will Be Deleted In {file_auto_delete} (Due To Copyright Issues).\n\n📌 Please Forward This Video / File To Somewhere Else And Start Downloading There.")
 
         # Schedule the file deletion
-        asyncio.create_task(delete_files(madflix_msgs, client, k))
+        asyncio.create_task(delete_files(tombotz_msgs, client, k))
         
         # for madflix_msg in madflix_msgs: 
             # try:
@@ -237,8 +237,4 @@ async def delete_files(messages, client, k):
 
 
 
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper
+
