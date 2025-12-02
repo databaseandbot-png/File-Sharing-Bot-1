@@ -10,7 +10,7 @@ from database.database import add_user, del_user, full_userbase, present_user
 
 tombotz = FILE_AUTO_DELETE
 davideveloper = tombotz
-file_auto_delete = humanize.naturaldelta(tomdeveloper)
+file_auto_delete = humanize.naturaldelta(davideveloper)
 
 
 
